@@ -149,7 +149,7 @@ function Teacher({ teachers, setTeachers }) {
                   <FormControl>
                     <InputLabel>Gün</InputLabel>
                     <Select
-                      sx={{ mr: 2, width: '120px' }}
+                      sx={{ mr: 2, width: '130px' }}
                       value={period.day}
                       label="Age"
                       onChange={(event) =>
@@ -222,13 +222,15 @@ function Teacher({ teachers, setTeachers }) {
           </Box>
         </Box>
       ))}
-      <Button
-        variant="contained"
-        startIcon={<Add />}
-        onClick={handleAddTeacher}
-      >
-        Ekle
-      </Button>
+      <Box display="flex" justifyContent="center">
+        <Button
+          variant="contained"
+          startIcon={<Add />}
+          onClick={handleAddTeacher}
+        >
+          Öğretmen Ekle
+        </Button>
+      </Box>
     </Box>
   );
 }
