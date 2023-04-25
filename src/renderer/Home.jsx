@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Typography, Snackbar, Alert } from '@mui/material';
 import Step from '@mui/material/Step';
 import StepButton from '@mui/material/StepButton';
 import Stepper from '@mui/material/Stepper';
@@ -226,13 +226,18 @@ const defaultConstraints = {
 };
 
 export default function HorizontalNonLinearStepper() {
+  const [started, setStarted] = React.useState(false);
   const [activeStep, setActiveStep] = React.useState(0);
-  const [teachers, setTeachers] = React.useState(savedTeachers);
-  const [courses, setCourses] = React.useState(savedCourses);
+  const [snackbarOpen, setSnackbarOpen] = React.useState(false);
+  const [snackbarMessage, setSnackbarMessage] = React.useState('');
+  const [snackbarSuccess, setSnackbarSuccess] = React.useState(true);
+
+  const [teachers, setTeachers] = React.useState([defaultTeacher]);
+  const [courses, setCourses] = React.useState([defaultCourse]);
   const [config, setConfig] = React.useState(defaultConfig);
   const [constraints, setConstraints] = React.useState(defaultConstraints);
 
-  // console.log(JSON.stringify(courses));
+  console.log('snackbarOpen', snackbarOpen);
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -244,6 +249,52 @@ export default function HorizontalNonLinearStepper() {
 
   const handleStep = (step) => () => {
     setActiveStep(step);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setSnackbarOpen(false);
+  };
+
+  const handleSaveState = () => {
+    try {
+      fs.writeFileSync('./state/teachers.json', JSON.stringify(teachers));
+      fs.writeFileSync('./state/courses.json', JSON.stringify(courses));
+      fs.writeFileSync('./state/config.json', JSON.stringify(config));
+      fs.writeFileSync('./state/constraints.json', JSON.stringify(constraints));
+
+      setSnackbarMessage('Bilgiler kaydedildi.');
+      setSnackbarSuccess(true);
+      setSnackbarOpen(true);
+    } catch (error) {
+      console.log(error);
+      setSnackbarMessage('Bilgiler kaydedilirken bir hata ile karşılaşıldı.');
+      setSnackbarSuccess(false);
+      setSnackbarOpen(true);
+    }
+  };
+
+  const handleLoadState = () => {
+    const teachersState = JSON.parse(
+      fs.readFileSync('./state/teachers.json', 'utf8')
+    );
+    const coursesState = JSON.parse(
+      fs.readFileSync('./state/courses.json', 'utf8')
+    );
+    const configState = JSON.parse(
+      fs.readFileSync('./state/config.json', 'utf8')
+    );
+    const constraintsState = JSON.parse(
+      fs.readFileSync('./state/constraints.json', 'utf8')
+    );
+
+    setTeachers(teachersState);
+    setCourses(coursesState);
+    setConfig(configState);
+    setConstraints(constraintsState);
+    setStarted(true);
   };
 
   const getCurrentPage = () => {
@@ -270,6 +321,34 @@ export default function HorizontalNonLinearStepper() {
     }
   };
 
+  if (!started) {
+    return (
+      <Box
+        display={'flex'}
+        alignItems={'center'}
+        justifyContent={'center'}
+        sx={{ height: '100vh' }}
+      >
+        <Button
+          size="large"
+          sx={{ mr: 2, width: '180px' }}
+          variant="contained"
+          onClick={handleLoadState}
+        >
+          SON KAYDI YÜKLE
+        </Button>
+        <Button
+          size="large"
+          variant="contained"
+          sx={{ ml: 2, width: '180px' }}
+          onClick={() => setStarted(true)}
+        >
+          YENI KAYIT
+        </Button>
+      </Box>
+    );
+  }
+
   return (
     <>
       <Box display={'flex'} justifyContent={'center'}>
@@ -292,24 +371,54 @@ export default function HorizontalNonLinearStepper() {
       <Box display={'flex'} justifyContent={'center'} px={'100px'}>
         {getCurrentPage()}
       </Box>
-
-      <Button
-        variant="contained"
-        disabled={activeStep === 0}
-        onClick={handleBack}
-        sx={{ position: 'fixed', left: 20, top: '50%' }}
+      {activeStep !== 0 && (
+        <Button
+          variant="contained"
+          disabled={activeStep === 0}
+          onClick={handleBack}
+          sx={{ position: 'fixed', left: 20, top: '50%' }}
+        >
+          GERİ
+        </Button>
+      )}
+      {activeStep !== steps.length - 1 && (
+        <Button
+          sx={{ width: '100%' }}
+          variant="contained"
+          onClick={handleNext}
+          disabled={activeStep === steps.length - 1}
+          sx={{ position: 'fixed', right: 20, top: '50%' }}
+        >
+          İLERİ
+        </Button>
+      )}
+      {activeStep === steps.length - 1 && (
+        <Button
+          sx={{ width: '100%' }}
+          variant="contained"
+          onClick={handleSaveState}
+          sx={{ position: 'fixed', right: 20, top: '50%' }}
+        >
+          KAYDET
+        </Button>
+      )}
+      <Snackbar
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        open={snackbarOpen}
+        autoHideDuration={3000}
+        onClose={handleClose}
       >
-        GERİ
-      </Button>
-      <Button
-        sx={{ width: '100%' }}
-        variant="contained"
-        onClick={handleNext}
-        disabled={activeStep === steps.length - 1}
-        sx={{ position: 'fixed', right: 20, top: '50%' }}
-      >
-        İLERİ
-      </Button>
+        <Alert
+          onClose={handleClose}
+          variant="filled"
+          severity={snackbarSuccess ? 'success' : 'error'}
+          sx={{
+            width: '100%',
+          }}
+        >
+          {snackbarMessage}
+        </Alert>
+      </Snackbar>
     </>
   );
 }

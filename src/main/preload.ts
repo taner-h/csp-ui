@@ -1,5 +1,7 @@
 // Disable no-unused-vars, broken for spread args
 /* eslint no-unused-vars: off */
+import fs, { writeFileSync } from 'fs';
+import path from 'path';
 import { contextBridge, ipcRenderer, IpcRendererEvent } from 'electron';
 
 export type Channels = 'ipc-example';
@@ -23,6 +25,20 @@ const electronHandler = {
     },
   },
 };
+
+contextBridge.exposeInMainWorld('path', {
+  join: (...args: any) => path.join(...args),
+});
+
+contextBridge.exposeInMainWorld('fs', {
+  readFileSync: (path: fs.PathOrFileDescriptor, ...args: any) =>
+    fs.readFileSync(path, ...args),
+  writeFileSync: (
+    path: fs.PathOrFileDescriptor,
+    data: string | NodeJS.ArrayBufferView,
+    ...args: any
+  ) => fs.writeFileSync(path, data, ...args),
+});
 
 contextBridge.exposeInMainWorld('electron', electronHandler);
 

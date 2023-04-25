@@ -102,8 +102,8 @@ function Teacher({ teachers, setTeachers }) {
         14)
       </Typography>
       {teachers.map((teacher, index) => (
-        <Box mt={3} mb={2}>
-          <Box key={index} display="flex" alignItems="center" mb={2}>
+        <Box key={index} mt={3} mb={2}>
+          <Box display="flex" alignItems="center" mb={2}>
             <Typography variant="h5" mr={2} color="common.black">
               {index + 1}:
             </Typography>
