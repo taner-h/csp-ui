@@ -349,7 +349,6 @@ function Course({ courses, setCourses, teachers }) {
                     onChange={(event) =>
                       handleChangeSessionHour(event, index, sessionIndex)
                     }
-                    width="150px"
                     sx={{ width: '120px', mr: 2 }}
                     type="number"
                     InputProps={{
@@ -507,14 +506,16 @@ function Course({ courses, setCourses, teachers }) {
           </Box>
         </Box>
       ))}
-      <Button
-        variant="contained"
-        startIcon={<Add />}
-        onClick={handleAddCourse}
-        mt={2}
-      >
-        EKLE
-      </Button>
+      <Box display="flex" justifyContent="center">
+        <Button
+          variant="contained"
+          startIcon={<Add />}
+          onClick={handleAddCourse}
+          mt={2}
+        >
+          DERS EKLE
+        </Button>
+      </Box>
     </Box>
   );
 }

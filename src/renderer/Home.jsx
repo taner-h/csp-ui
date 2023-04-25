@@ -192,12 +192,45 @@ const defaultCourse = {
   ],
 };
 
+const defaultConfig = {
+  languageDay1: 1,
+  languageDay2: 2,
+  languageHour: 16,
+  SIZE: 100,
+  STAGNATION_LIMIT: 75,
+  ELITE_SIZE: 12,
+  GENERATION_LIMIT: 1000,
+  CROSSOVER_RATE: 0.5,
+  MUTATION_TYPE: 3,
+  MUTATION_RATE_1: 0.1,
+  MUTATION_RATE_2: 0.2,
+  MUTATION_RATE_3: 0.3,
+  STAGNATION_THRESHOLD_1: 15,
+  STAGNATION_THRESHOLD_2: 35,
+  GENERATION_THRESHOLD_1: 50,
+  GENERATION_THRESHOLD_2: 100,
+};
+
+const defaultConstraints = {
+  semesterCollision: 2,
+  teacherCollision: 2,
+  fixedSessionViolation: 2,
+  breakHourViolation: 3,
+  cannotCollideViolation: 0.5,
+  singleSessionDay: 0.4,
+  teacherAvailabilityViolation: 0.3,
+  multipleCourseSession: 0.2,
+  slotSpan: 0.25,
+  emptySlot: 0.15,
+  freeDay: 1,
+};
+
 export default function HorizontalNonLinearStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [teachers, setTeachers] = React.useState(savedTeachers);
   const [courses, setCourses] = React.useState(savedCourses);
-  const [config, setConfig] = React.useState([]);
-  const [constraints, setConstraints] = React.useState([]);
+  const [config, setConfig] = React.useState(defaultConfig);
+  const [constraints, setConstraints] = React.useState(defaultConstraints);
 
   // console.log(JSON.stringify(courses));
 
@@ -226,9 +259,14 @@ export default function HorizontalNonLinearStepper() {
           />
         );
       case 2:
-        return <Config />;
+        return <Config config={config} setConfig={setConfig} />;
       case 3:
-        return <Constraints />;
+        return (
+          <Constraints
+            constraints={constraints}
+            setConstraints={setConstraints}
+          />
+        );
     }
   };
 

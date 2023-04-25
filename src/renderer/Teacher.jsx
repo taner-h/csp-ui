@@ -169,7 +169,6 @@ function Teacher({ teachers, setTeachers }) {
                     onChange={(event) =>
                       handleChangeStartSlot(event, index, periodIndex)
                     }
-                    width="150px"
                     sx={{ width: '120px', mr: 2 }}
                     type="number"
                     InputProps={{
@@ -185,7 +184,6 @@ function Teacher({ teachers, setTeachers }) {
                   <TextField
                     label="Bitiş Saati"
                     value={period.endSlot}
-                    width="150px"
                     sx={{ width: '120px', mr: 2 }}
                     type="number"
                     onChange={(event) =>
