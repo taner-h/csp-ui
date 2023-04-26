@@ -7,6 +7,7 @@ import Config from './Config';
 import Constraints from './Constraints';
 import Course from './Course';
 import Teacher from './Teacher';
+import { exportData } from 'utils/export';
 
 const steps = ['Öğretmen Ekleme', 'Ders Ekleme', 'Genel Ayarlar', 'Kısıtlar'];
 
@@ -15,19 +16,26 @@ const savedTeachers = [
     firstName: 'Marie',
     lastName: 'Peroueme',
     hasUnavailable: false,
-    unavailable: [{ day: '', startSlot: '', endSlot: '' }],
+    unavailable: [{ day: 4, startSlot: 9, endSlot: 11 }],
   },
   {
     firstName: 'Damien',
     lastName: 'Berthet',
     hasUnavailable: false,
-    unavailable: [{ day: '', startSlot: '', endSlot: '' }],
+    unavailable: [
+      { day: 1, startSlot: 11, endSlot: 13 },
+      { day: 3, startSlot: 9, endSlot: 10 },
+      { day: 4, startSlot: 16, endSlot: 18 },
+    ],
   },
   {
     firstName: 'Erden',
     lastName: 'Tuğcu',
     hasUnavailable: true,
-    unavailable: [{ day: 1, startSlot: 9, endSlot: 12 }],
+    unavailable: [
+      { day: 1, startSlot: 9, endSlot: 12 },
+      { day: 2, startSlot: 15, endSlot: 18 },
+    ],
   },
   {
     firstName: 'Uzay',
@@ -237,8 +245,6 @@ export default function HorizontalNonLinearStepper() {
   const [config, setConfig] = React.useState(defaultConfig);
   const [constraints, setConstraints] = React.useState(defaultConstraints);
 
-  console.log('snackbarOpen', snackbarOpen);
-
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
@@ -258,12 +264,25 @@ export default function HorizontalNonLinearStepper() {
     setSnackbarOpen(false);
   };
 
+  const handleStateTransform = () => {
+    exportData([...teachers], [...courses], { ...config }, { ...constraints });
+  };
+
   const handleSaveState = () => {
     try {
-      fs.writeFileSync('./state/teachers.json', JSON.stringify(teachers));
-      fs.writeFileSync('./state/courses.json', JSON.stringify(courses));
-      fs.writeFileSync('./state/config.json', JSON.stringify(config));
-      fs.writeFileSync('./state/constraints.json', JSON.stringify(constraints));
+      fs.writeFileSync(
+        './state/teachers.json',
+        JSON.stringify(teachers, null, 2)
+      );
+      fs.writeFileSync(
+        './state/courses.json',
+        JSON.stringify(courses, null, 2)
+      );
+      fs.writeFileSync('./state/config.json', JSON.stringify(config, null, 2));
+      fs.writeFileSync(
+        './state/constraints.json',
+        JSON.stringify(constraints, null, 2)
+      );
 
       setSnackbarMessage('Bilgiler kaydedildi.');
       setSnackbarSuccess(true);
@@ -371,6 +390,25 @@ export default function HorizontalNonLinearStepper() {
       <Box display={'flex'} justifyContent={'center'} px={'100px'}>
         {getCurrentPage()}
       </Box>
+      {activeStep === steps.length - 1 && (
+        <Box display={'flex'} justifyContent={'center'} px={'100px'}>
+          <Button
+            sx={{ width: '150px', mr: 2 }}
+            variant="contained"
+            onClick={handleSaveState}
+          >
+            KAYDET
+          </Button>
+
+          <Button
+            sx={{ width: '150px', ml: 2 }}
+            variant="contained"
+            onClick={handleStateTransform}
+          >
+            DÖNÜŞTÜR
+          </Button>
+        </Box>
+      )}
       {activeStep !== 0 && (
         <Button
           variant="contained"
@@ -392,16 +430,7 @@ export default function HorizontalNonLinearStepper() {
           İLERİ
         </Button>
       )}
-      {activeStep === steps.length - 1 && (
-        <Button
-          sx={{ width: '100%' }}
-          variant="contained"
-          onClick={handleSaveState}
-          sx={{ position: 'fixed', right: 20, top: '50%' }}
-        >
-          KAYDET
-        </Button>
-      )}
+
       <Snackbar
         anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
         open={snackbarOpen}

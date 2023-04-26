@@ -23,10 +23,6 @@ import AddIcon from '@mui/icons-material/Add';
 import { useEffect } from 'react';
 
 function Teacher({ teachers, setTeachers }) {
-  useEffect(() => {
-    console.log(teachers);
-  });
-
   const handleAddTeacher = () => {
     setTeachers([
       ...teachers,

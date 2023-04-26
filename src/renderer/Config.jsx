@@ -39,8 +39,6 @@ function Config({ config, setConfig }) {
     setConfig({ ...config, [key]: parseFloat(event.target.value) });
   };
 
-  console.log('config', config);
-
   return (
     <Box p={4}>
       <Box>

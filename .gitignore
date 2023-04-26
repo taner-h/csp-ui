@@ -1,7 +1,7 @@
 # Logs
 logs
 *.log
-
+save
 # Runtime data
 pids
 *.pid

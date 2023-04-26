@@ -1,1 +1,2660 @@
-[{"name":"Matematik II","code":"ING107","department":0,"year":1,"hasNoTeacher":false,"hasCoursesToNotCollide":false,"cannotCollideWith":[],"hasMultipleTeachers":false,"hasLabs":false,"hasFixed":false,"sessions":[{"suffix":null,"isLab":false,"isFixed":false,"day":"","hour":"","length":"","teacher":{"firstName":"","lastName":""}}]},{"name":"Fizik II","code":"ING117","department":0,"year":1,"hasNoTeacher":false,"hasCoursesToNotCollide":false,"cannotCollideWith":[],"hasMultipleTeachers":false,"hasLabs":false,"hasFixed":false,"sessions":[{"suffix":null,"isLab":false,"isFixed":false,"day":"","hour":"","length":"","teacher":{"firstName":"","lastName":""}}]},{"name":"Algoritma ve İleri Bilgisayar Programlama","code":"ING114","department":0,"year":1,"hasNoTeacher":false,"hasCoursesToNotCollide":false,"cannotCollideWith":[],"hasMultipleTeachers":false,"hasLabs":false,"hasFixed":false,"sessions":[{"suffix":null,"isLab":false,"isFixed":false,"day":"","hour":"","length":"","teacher":{"firstName":"","lastName":""}}]},{"name":"Programlama Dillerinin Prensipleri","code":"ING115","department":0,"year":1,"hasNoTeacher":false,"hasCoursesToNotCollide":false,"cannotCollideWith":[],"hasMultipleTeachers":false,"hasLabs":false,"hasFixed":false,"sessions":[{"suffix":null,"isLab":false,"isFixed":false,"day":"","hour":"","length":"","teacher":{"firstName":"","lastName":""}}]},{"name":"Kariyer Planlama","code":"CNT120","department":0,"year":1,"hasNoTeacher":false,"hasCoursesToNotCollide":false,"cannotCollideWith":[],"hasMultipleTeachers":false,"hasLabs":false,"hasFixed":false,"sessions":[{"suffix":null,"isLab":false,"isFixed":false,"day":"","hour":"","length":"","teacher":{"firstName":"","lastName":""}}]}]
+[
+  {
+    "name": "Matematik II",
+    "code": "ING107",
+    "department": 0,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Marie",
+          "lastName": "Peroueme",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Marie",
+          "lastName": "Peroueme",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Marie",
+          "lastName": "Peroueme",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Fizik II",
+    "code": "ING117",
+    "department": 0,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": true,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Erden",
+          "lastName": "Tuğcu",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 1,
+              "startSlot": 9,
+              "endSlot": 12
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab A",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Siegfried",
+          "lastName": "Devoldere",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab B",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Siegfried",
+          "lastName": "Devoldere",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Algoritma ve İleri Bilgisayar Programlama",
+    "code": "ING114",
+    "department": 0,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "Sayısal Elektronik",
+      "İşletim Sistemleri",
+      "Gömülü Sistem Tasarım Temelleri"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Uzay",
+          "lastName": "Çetin",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 2,
+              "startSlot": 15,
+              "endSlot": 17
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Uzay",
+          "lastName": "Çetin",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 2,
+              "startSlot": 15,
+              "endSlot": 17
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Kariyer Planlama",
+    "code": "CNT120",
+    "department": 0,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tamer",
+          "lastName": "Özyiğit",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bilgisayar Sistemlerine Giriş",
+    "code": "INF116",
+    "department": 0,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Teoman",
+          "lastName": "Naskali",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 0,
+              "startSlot": 12,
+              "endSlot": 14
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Teknik Resim",
+    "code": "ING144",
+    "department": 0,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Ufuk",
+          "lastName": "Bahçeli",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 0,
+              "startSlot": 16,
+              "endSlot": 18
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sayısal Elektronik",
+    "code": "ING220",
+    "department": 0,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "Algoritma ve İleri Bilgisayar Programlama",
+      "İşletim Sistemleri",
+      "Gömülü Sistem Tasarım Temelleri"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": true,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Egi",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab A",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Egi",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab B",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Egi",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Diferansiyel Denklemler",
+    "code": "ING208",
+    "department": 0,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Damien",
+          "lastName": "Berthet",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bilgisayar Mühendisliği İçin Olasılık ve İstatistiğe Giriş",
+    "code": "ING211",
+    "department": 0,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Günce",
+          "lastName": "Orman",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Nesneye Yönelik Programlama",
+    "code": "INF243",
+    "department": 0,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": true,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Akın",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Akın",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab A",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Akın",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab B",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Akın",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Yüksek Matematik II",
+    "code": "ING252",
+    "department": 0,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Damien",
+          "lastName": "Berthet",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bilgi Teorisi",
+    "code": "INF365",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Burak",
+          "lastName": "Parlak",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 4,
+              "startSlot": 16,
+              "endSlot": 18
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sayısal İşaret İşleme",
+    "code": "INF345",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Reis Burak",
+          "lastName": "Arslan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mikroişlemciler",
+    "code": "INF340",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": true,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Reis Burak",
+          "lastName": "Arslan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab A",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Reis Burak",
+          "lastName": "Arslan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab B",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Reis Burak",
+          "lastName": "Arslan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Veritabanı Yönetimi ve Güvenliği",
+    "code": "INF360",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Sultan",
+          "lastName": "Turhan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sayısal Analiz",
+    "code": "INF325",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Burak",
+          "lastName": "Parlak",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 4,
+              "startSlot": 16,
+              "endSlot": 18
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "İşletim Sistemleri",
+    "code": "INF333",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "Algoritma ve İleri Bilgisayar Programlama",
+      "Sayısal Elektronik",
+      "Gömülü Sistem Tasarım Temelleri"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Serhan",
+          "lastName": "Daniş",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Serhan",
+          "lastName": "Daniş",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bilgisayar Ağları",
+    "code": "INF334",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Tankut",
+          "lastName": "Acarman",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Otomat ve Diller Teorisi",
+    "code": "INF323",
+    "department": 0,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Özgün",
+          "lastName": "Pınarer",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Yöneylem Araştırması",
+    "code": "IND471",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tamer",
+          "lastName": "Özyiğit",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tamer",
+          "lastName": "Özyiğit",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mühendislik Ekonomisi",
+    "code": "IND472",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tamer",
+          "lastName": "Özyiğit",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tamer",
+          "lastName": "Özyiğit",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sistem Mühendisliği",
+    "code": "INF437",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Akın",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bilgi Çıkarımı ve Veri Madenciliğine Giriş",
+    "code": "INF483",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Günce",
+          "lastName": "Orman",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bilgisayar Mühendisliğinde Özel Konular",
+    "code": "INF446",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Uzay",
+          "lastName": "Çetin",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 2,
+              "startSlot": 15,
+              "endSlot": 17
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Gömülü Sistem Tasarım Temelleri",
+    "code": "INF482",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "Algoritma ve İleri Bilgisayar Programlama",
+      "Sayısal Elektronik",
+      "İşletim Sistemleri"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Teoman",
+          "lastName": "Naskali",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 0,
+              "startSlot": 12,
+              "endSlot": 14
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Teoman",
+          "lastName": "Naskali",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 0,
+              "startSlot": 12,
+              "endSlot": 14
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Yazılım Mühendisliği ve Nesneye Yönelik Tasarım",
+    "code": "INF481",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Gülfem",
+          "lastName": "Alptekin",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Gülfem",
+          "lastName": "Alptekin",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bitirme Projesi",
+    "code": "INF494",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": true,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": true,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": true,
+        "day": 4,
+        "hour": 9,
+        "length": 3,
+        "teacher": {
+          "firstName": "",
+          "lastName": ""
+        }
+      }
+    ]
+  },
+  {
+    "name": "Şifrelemeye Giriş",
+    "code": "INF441",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Akın",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Girişimcilik",
+    "code": "CNT417",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": true,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Özgün",
+          "lastName": "Pınarer",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sosyal Medya",
+    "code": "CNT416",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": true,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Sultan",
+          "lastName": "Turhan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Fotoğrafçılık",
+    "code": "CNT411",
+    "department": 0,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": true,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Murat",
+          "lastName": "Egi",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Matematik II",
+    "code": "ING107",
+    "department": 1,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Marie",
+          "lastName": "Peroueme",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Marie",
+          "lastName": "Peroueme",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Marie",
+          "lastName": "Peroueme",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Fizik II",
+    "code": "ING117",
+    "department": 1,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": true,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Siegfried",
+          "lastName": "Devoldere",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab A",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Siegfried",
+          "lastName": "Devoldere",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": "Lab B",
+        "isLab": true,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Siegfried",
+          "lastName": "Devoldere",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Python ile Bilgisayar Programlama",
+    "code": "ING134",
+    "department": 1,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "İstatistik",
+      "Yöneylem Araştırması II",
+      "Finans Mühendisliği"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Orhan İlker",
+          "lastName": "Başaran",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Orhan İlker",
+          "lastName": "Başaran",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Teknik Resim",
+    "code": "ING145",
+    "department": 1,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Ufuk",
+          "lastName": "Bahçeli",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 0,
+              "startSlot": 16,
+              "endSlot": 18
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Kariyer Planlama",
+    "code": "CNT120",
+    "department": 1,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Nazlı",
+          "lastName": "Göker Mutlu",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Muhasebeye Giriş",
+    "code": "CNT110",
+    "department": 1,
+    "year": 1,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Büke",
+          "lastName": "Tolga",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Yüksek Matematik II",
+    "code": "ING252",
+    "department": 1,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Damien",
+          "lastName": "Berthet",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Diferansiyel Denklemler",
+    "code": "ING208",
+    "department": 1,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Damien",
+          "lastName": "Berthet",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bilişim Teknolojilerine Giriş",
+    "code": "ING224",
+    "department": 1,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Orhan",
+          "lastName": "Feyzioğlu",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "İstatistik",
+    "code": "ING242",
+    "department": 1,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "Python ile Bilgisayar Programlama",
+      "Yöneylem Araştırması II",
+      "Finans Mühendisliği"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Müjde",
+          "lastName": "Genevois",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Müjde",
+          "lastName": "Genevois",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mühendisler için Proje, Risk ve Değişiklik Yönetimi",
+    "code": "ING225",
+    "department": 1,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Mehtap",
+          "lastName": "Dursun",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Üretim Yöntemleri ve Malzeme Bilimi",
+    "code": "IND232",
+    "department": 1,
+    "year": 2,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Erden",
+          "lastName": "Tuğcu",
+          "hasUnavailable": true,
+          "unavailable": [
+            {
+              "day": 1,
+              "startSlot": 9,
+              "endSlot": 12
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Oyun Teorisine Giriş",
+    "code": "IND377",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Temel",
+          "lastName": "Öncan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Ergonomi",
+    "code": "IND345",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "İlke",
+          "lastName": "Bereketli",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Proje Yönetimine Giriş",
+    "code": "IND362",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Levent",
+          "lastName": "Demircan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Uygulamalarla Matematiksel Modelleme",
+    "code": "IND375",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Ebru",
+          "lastName": "Angün",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Modelleme ve Simülasyon",
+    "code": "IND304",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Gülçin",
+          "lastName": "Büyüközkan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mühendislik Ekonomisi",
+    "code": "IND321",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tuncay",
+          "lastName": "Gürbüz",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tuncay",
+          "lastName": "Gürbüz",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Üretim Planlama ve Kontrol",
+    "code": "IND336",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Müjde",
+          "lastName": "Genevois",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Yöneylem Araştırması II",
+    "code": "IND372",
+    "department": 1,
+    "year": 3,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "Python ile Bilgisayar Programlama",
+      "İstatistik",
+      "Finans Mühendisliği"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Ertuğrul",
+          "lastName": "Karsak",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      },
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Mehtap",
+          "lastName": "Dursun",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Finans Mühendisliği",
+    "code": "IND423",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": true,
+    "cannotCollideWith": [
+      "Python ile Bilgisayar Programlama",
+      "İstatistik",
+      "Yöneylem Araştırması II"
+    ],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Ertuğrul",
+          "lastName": "Karsak",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Endüstri Mühendisliğinde Güncel Konular ve Uygulamaları",
+    "code": "IND482",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Gülçin",
+          "lastName": "Büyüközkan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "İş Hukuku",
+    "code": "CNT476",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Sedef",
+          "lastName": "Koç",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Bitirme Projesi",
+    "code": "IND497",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": true,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": true,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": true,
+        "day": 4,
+        "hour": 9,
+        "length": 3,
+        "teacher": {
+          "firstName": "",
+          "lastName": ""
+        }
+      }
+    ]
+  },
+  {
+    "name": "Sistem Dinamiği",
+    "code": "IND404",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Mehtap",
+          "lastName": "Dursun",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Investment Analysis",
+    "code": "IND422",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Levent",
+          "lastName": "Demircan",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Enterprise Resources Planning",
+    "code": "IND433",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Emre",
+          "lastName": "Alptekin",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Enerji Politikaları ve Planlaması",
+    "code": "IND439",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Devrim",
+          "lastName": "İldiri",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Toplam Kalite Yönetimi",
+    "code": "IND456",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Emre",
+          "lastName": "Demircioğlu",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Tesis Planlama",
+    "code": "IND463",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 3,
+        "teacher": {
+          "firstName": "Emre",
+          "lastName": "Demircioğlu",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Risk Analizi ve Yönetimi",
+    "code": "CNT474",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Tuncay",
+          "lastName": "Gürbüz",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Rekabet ve Pazarlama Yönetimi",
+    "code": "CNT475",
+    "department": 1,
+    "year": 4,
+    "hasNoTeacher": false,
+    "hasCoursesToNotCollide": false,
+    "cannotCollideWith": [],
+    "hasMultipleTeachers": false,
+    "hasLabs": false,
+    "hasFixed": false,
+    "sessions": [
+      {
+        "suffix": null,
+        "isLab": false,
+        "isFixed": false,
+        "day": "",
+        "hour": "",
+        "length": 2,
+        "teacher": {
+          "firstName": "Caner",
+          "lastName": "Dinçer",
+          "hasUnavailable": false,
+          "unavailable": [
+            {
+              "day": "",
+              "startSlot": "",
+              "endSlot": ""
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -32,8 +32,6 @@ function Constraints({ constraints, setConstraints }) {
     setConstraints({ ...constraints, [key]: parseFloat(event.target.value) });
   };
 
-  console.log('constraints', constraints);
-
   return (
     <Box p={4}>
       <Box>
